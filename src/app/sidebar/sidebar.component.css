@@ -1,0 +1,17 @@
+/*===============================sidebar with icons=============================*/
+.pmd-sidebar .pmd-sidebar-nav li a { color:#c8c8c8; font-size:15px; font-family:"Roboto"; padding: 18px 24px; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease;}
+.pmd-sidebar .pmd-sidebar-nav li a i { min-width:44px; text-align:center;}
+.pmd-sidebar .pmd-sidebar-nav a i svg {display: block; margin: 0 auto;}
+.pmd-sidebar-left .nav > li > a:hover, .pmd-sidebar-left .nav > li > a:focus, .pmd-sidebar-left .nav > li > a:active, .pmd-sidebar-left .nav > li > a.active { background-color:#1a2940; color:#fff;}
+.pmd-sidebar-left .nav > li > a:hover svg path, .pmd-sidebar-left .nav > li > a:focus svg path, .pmd-sidebar-left .nav > li > a:active svg path, .pmd-sidebar-left .nav > li > a.active svg path, .pmd-sidebar-left .nav > li > a:hover svg, .pmd-sidebar-left .nav > li > a:focus svg, .pmd-sidebar-left .nav > li > a:active svg, .pmd-sidebar-left .nav > li > a.active svg  { fill: #fff;}
+.pmd-sidebar.pmd-sidebar-open{ width:274px; min-width:274px;}
+.pmd-sidebar-slide-push.pmd-sidebar-open ~ .wrapper .constructor, .pmd-sidebar-slide-push.pmd-sidebar-open ~ .pmd-content { margin-left:274px;}
+.pmd-sidebar-left .nav > li.pmd-user-info > a { border-bottom:solid 1px #1a2940;  font-size:16px; color:#fff; padding-left:12px;}
+
+.pmd-sidebar { width: 200px;height: 1000px; max-width:200px;margin-top:-20px; transform:translate3d(0px, 0px, 0px); -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); background-color:#1f2f46;}
+.pmd-sidebar.pmd-sidebar-open {min-width: 274px; width: 274px;}
+.pmd-sidebar .pmd-sidebar-nav li a { padding: 18px 20px 16px; color:#c8c8c8; background-color:transparent;}
+.pmd-sidebar-left .nav > li > a:hover svg.stroke-fill path, .pmd-sidebar-left .nav > li > a:focus svg.stroke-fill path, .pmd-sidebar-left .nav > li > a:active svg.stroke-fill path, .pmd-sidebar-left .nav > li > a.active svg.stroke-fill path {stroke: #fff; fill: none;}
+.pmd-sidebar-left .nav > li > a:hover svg circle, .pmd-sidebar-left .nav > li > a:focus svg circle, .pmd-sidebar-left .nav > li > a:active svg circle, .pmd-sidebar-left .nav > li > a.active svg circle {fill: #fff;}
+
+

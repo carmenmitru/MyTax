@@ -1,0 +1,94 @@
+
+<aside style="margin-left:-130px;" class="pmd-sidebar sidebar-default pmd-sidebar-left bg-fill-darkblue sidebar-with-icons pmd-sidebar-left-fixed" role="navigation">
+	<ul class="nav pmd-sidebar-nav">
+		
+		<!-- User info -->
+		<li class="dropdown pmd-dropdown pmd-user-info visible-xs visible-md visible-sm visible-lg">
+			<a aria-expanded="false" data-toggle="dropdown" class="btn-user dropdown-toggle media" data-sidebar="true" aria-expandedhref="javascript:void(0);">
+				<div class="media-left">
+          
+					<img style="width: 50px"  src="{{user?.img}}" alt="New User">
+				</div>
+				<div class="media-body media-middle">{{user?.nume}} {{user?.prenume}}</div>
+				<div class="media-right media-middle"><i class="dic-more-vert dic"></i></div>
+			</a>
+			<div class="pmd-dropdown-menu-container"><div class="pmd-dropdown-menu-bg"></div><ul class="dropdown-menu">
+				<li><a href="login.html">Logout</a></li>
+			</ul></div>
+		</li><!-- End user info -->
+		
+		<li> 
+			<a [routerLink]="['/dashboard']" class="pmd-ripple-effect" href="index.html">	
+				<i class="media-left media-middle"><svg version="1.1" x="0px" y="0px" width="19.83px" height="18px" viewBox="287.725 407.535 19.83 18" enable-background="new 287.725 407.535 19.83 18" xml:space="preserve">
+<g>
+	<path fill="#C9C8C8" d="M307.555,407.535h-9.108v10.264h9.108V407.535z M287.725,407.535v6.232h9.109v-6.232H287.725z
+		 M296.834,415.271h-9.109v10.264h9.109V415.271z M307.555,419.303h-9.108v6.232h9.108V419.303z"></path>
+</g>
+</svg></i>
+				<span class="media-body">Dashboard</span>
+			</a> 
+		</li>
+		
+		<li class="dropdown pmd-dropdown"> 
+			<a [routerLink]="['/payments']" aria-expanded="false" data-toggle="dropdown" class="btn-user dropdown-toggle media" data-sidebar="true" href="javascript:void(0);">	
+				<i class="material-icons media-left pmd-sm">swap_calls</i> 
+				<span class="media-body">Plati</span>
+				<div class="media-right media-bottom"><i class="dic-more-vert dic"></i></div>
+			</a> 
+			<div class="pmd-dropdown-menu-container"><div class="pmd-dropdown-menu-bg"></div><ul class="dropdown-menu">
+				<li><a href="custom-scroll.html">Custom Scrollbar</a></li>
+				<li><a href="datetimepicker.html">Datetimepicker</a></li>
+				<li><a href="range-slider.html">Range Slider</a></li>
+				<li><a href="select2.html">Select2</a></li>
+			</ul></div>
+		</li>
+		
+	
+		<li class="dropdown pmd-dropdown"> 
+			<a [routerLink]="['/calendar']" aria-expanded="false" data-toggle="dropdown" class="btn-user dropdown-toggle media" data-sidebar="true" href="javascript:void(0);">	
+				<i class="media-left media-middle"><svg version="1.1" x="0px" y="0px" width="18px" height="12.706px" viewBox="0 0 18 12.706" enable-background="new 0 0 18 12.706" xml:space="preserve">
+<path fill="#C9C8C8" d="M0,0v12.706h18V0H0z M12.706,4.235v3.176H9.108V4.235H12.706z M8.049,4.235v3.176h-6.99V4.235H8.049z
+	 M1.059,8.47h6.99v3.177h-6.99V8.47z M9.108,11.647V8.47h3.599v3.177H9.108z M13.766,11.647V8.47h3.176v3.177H13.766z M16.942,7.412
+	h-3.176V4.235h3.176V7.412L16.942,7.412z"></path>
+</svg></i> 
+				<span class="media-body">Calendar</span>
+				<div class="media-right media-bottom"><i class="dic-more-vert dic"></i></div>
+			</a> 
+			<div class="pmd-dropdown-menu-container"><div class="pmd-dropdown-menu-bg"></div><ul class="dropdown-menu">
+				<li><a href="table.html">Normal Table</a></li>
+				<li><a href="data-table.html">Data Table</a></li>
+				<li><a href="table-with-expand-collapse.html">Table with Expand/Collapse</a></li>
+			</ul></div>
+		</li>
+
+		
+		
+		
+		<li> 
+			<a [routerLink]="['/notifications']" class="pmd-ripple-effect" href="notifications.html">	
+				<i class="media-left media-middle">
+				<svg version="1.1" id="Layer_1" x="0px" y="0px" width="15.3px" height="18px" viewBox="289.99 337.535 15.3 18" enable-background="new 289.99 337.535 15.3 18" xml:space="preserve">
+					<g>
+						<g>
+							<path fill="#C9C8C8" d="M297.64,355.535c0.99,0,1.8-0.81,1.8-1.8h-3.6C295.84,354.725,296.65,355.535,297.64,355.535z
+								 M303.49,350.135v-4.95c0-2.79-1.891-5.041-4.501-5.67v-0.63c0-0.72-0.63-1.35-1.35-1.35c-0.72,0-1.35,0.63-1.35,1.35v0.63
+								c-2.61,0.629-4.5,2.88-4.5,5.67v4.95l-1.8,1.8v0.9h15.3v-0.9L303.49,350.135z"></path>
+						</g>
+					</g>
+				</svg></i> 
+				<span class="media-body">Notificari</span>
+			</a> 
+		</li>
+		<li> 
+			<a class="pmd-ripple-effect" href="login.html">	
+				<i class="media-left media-middle">
+				<svg version="1.1" id="Layer_1" x="0px" y="0px" width="18px" height="18px" viewBox="288.64 337.535 18 18" enable-background="new 288.64 337.535 18 18" xml:space="preserve">
+				<path fill="#C9C8C8" d="M295.39,337.535v2.25h9v13.5h-9v2.25h11.25v-18H295.39z M297.64,342.035v3.375h-9v2.25h9v3.375l3.375-3.375
+					l1.125-1.125l-1.125-1.125L297.64,342.035z"></path>
+				</svg></i> 
+				<span class="media-body">Logout</span>
+			</a> 
+		</li>
+		
+	</ul>
+</aside>

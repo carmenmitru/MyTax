@@ -1,0 +1,110 @@
+<app-navbar></app-navbar>
+<!--<app-sidebar></app-sidebar>-->
+
+<div class="container">
+    <div class="row">
+  <div class="col-sm-3">
+    <app-sidebar></app-sidebar>
+  </div>
+
+  <div class="col-sm-9">
+     <div class="form-group col-md-12 bg-primary">
+            <label class="control-label" for="">Personal Information</label>
+        </div>
+    <div class="form-group">
+        <div class="form-group col-md-6 col-lg-6 col-sm-6">
+              <span class="required-lbl">* </span><label class="control-label" for="firstname">Nume</label>
+              <div class="controls">
+                <input id="firstname" name="firstname" readonly value="{{user?.nume}}" type="text" placeholder="" class="form-control" required="">
+              </div>
+        </div>
+        <div class="form-group col-md-6 col-lg-6 col-sm-6">
+              <span class="required-lbl">* </span><label class="control-label" for="firstname">Prenume</label>
+              <div class="controls">
+                <input id="firstname" name="firstname" readonly value="{{user?.prenume}}" type="text" placeholder="" class="form-control" required="">
+              </div>
+        </div>
+        
+    </div>
+     <div class="form-group">
+        <div class="form-group col-md-4 col-lg-4 col-sm-4">
+              <span class="required-lbl">* </span><label class="control-label" for="firstname">Cnp</label>
+              <div class="controls">
+                <input id="firstname" name="firstname" readonly value="{{user?.cnp}}" type="text" placeholder="" class="form-control" required="">
+              </div>
+        </div>
+        <div class="form-group col-md-4 col-lg-4 col-sm-4">
+              <span class="required-lbl">* </span><label class="control-label" for="firstname">Oras</label>
+              <div class="controls">
+                <input id="firstname" name="firstname" readonly value="{{user?.oras}}" type="text" placeholder="" class="form-control" required="">
+              </div>
+        </div>
+        <div class="form-group col-md-4 col-lg-4 col-sm-4">
+              <span class="required-lbl">* </span><label class="control-label" for="firstname">Judet</label>
+              <div class="controls">
+                <input id="firstname" name="firstname" readonly value="{{user?.judet}}" type="text" placeholder="" class="form-control" required="">
+              </div>
+        </div>
+        
+    </div>
+    <div class="form-group">
+        <div class="form-group col-md-4 col-lg-4 col-sm-4">
+              <span class="required-lbl">* </span><label class="control-label" for="firstname">Strada</label>
+              <div class="controls">
+                <input id="firstname" name="firstname" readonly value="{{user?.strada}}" type="text" placeholder="" class="form-control" required="">
+              </div>
+        </div>
+        <div class="form-group col-md-4 col-lg-4 col-sm-4">
+              <span class="required-lbl">* </span><label class="control-label" for="firstname">Nr</label>
+              <div class="controls">
+                <input id="firstname" name="firstname" readonly value="{{user?.nr}}" type="text" placeholder="" class="form-control" required="">
+              </div>
+        </div>
+        <div class="form-group col-md-4 col-lg-4 col-sm-4">
+              <span class="required-lbl">* </span><label class="control-label" for="firstname">Etaj/Ap</label>
+              <div class="controls">
+                <input id="firstname" name="firstname" readonly value="{{user?.etaj}}" type="text" placeholder="" class="form-control" required="">
+              </div>
+        </div>
+        
+    </div>
+    
+      
+    <div class="form-group">
+        
+        <table class="table table-striped table-condensed">
+                  <thead>
+                  <tr>
+                      <th>Nume Taxa</th>
+                      <th>Date scadenta</th>
+                      <th>Taxa</th>
+                      <th>Status</th>                                          
+                  </tr>
+              </thead>   
+              <tbody>
+                <tr *ngFor="let item of taxes">
+                    <td>{{item.nume_taxa}}</td>
+                    <td>{{item.scadenta}}</td>
+                    <td>{{item.tax}} lei</td>
+                    <td>
+                      
+                      <span *ngIf="item.payment==0"  class="label label-danger">Not paid
+
+                      </span>
+                      <span *ngIf="item.payment==1"  class="label label-success">Paid
+
+                      </span>
+
+                       <span *ngIf="item.payment==2"  class="label label-warning">Pending
+
+                      </span>
+                    </td>                                       
+                </tr>                                  
+              </tbody>
+            </table>
+    </div>
+      
+  </div>
+</div>
+</div>
+
